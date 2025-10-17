@@ -52,10 +52,15 @@ const Navbar = () => {
             <Button variant="ghost" size="icon" className="rounded-full hidden sm:flex">
               <Heart className="w-5 h-5" />
             </Button>
-            <Link to="/chat">
+            <Link to="/login" className="hidden md:block">
+              <Button variant="ghost">
+                Sign In
+              </Button>
+            </Link>
+            <Link to="/signup">
               <Button className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity shadow-md hover-glow">
                 <Sparkles className="w-4 h-4 mr-2" />
-                Start Chat
+                Get Started
               </Button>
             </Link>
           </div>
